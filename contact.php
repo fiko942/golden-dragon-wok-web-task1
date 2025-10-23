@@ -53,7 +53,7 @@ $_SESSION['captcha_answer'] = $captchaA + $captchaB;
         <a href="contact.php" class="text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Contact &amp; Jobs</a>
       </nav>
       <div class="flex items-center gap-4">
-        <a href="https://wa.me/6281234567890?text=Halo%20Golden%20Dragon%20Wok" class="inline-flex items-center rounded-full border border-[#C8A951] px-4 py-2 text-sm font-semibold text-[#9A1111] transition hover:bg-[#C8A951] hover:text-neutral-900 focus-visible:outline focus-visible:outline-[#C8A951]">Chat WhatsApp</a>
+        <a href="https://wa.me/6285733666741?text=Halo%20Golden%20Dragon%20Wok" class="inline-flex items-center rounded-full border border-[#C8A951] px-4 py-2 text-sm font-semibold text-[#9A1111] transition hover:bg-[#C8A951] hover:text-neutral-900 focus-visible:outline focus-visible:outline-[#C8A951]">Chat WhatsApp</a>
         <button type="button" data-theme-toggle class="inline-flex items-center justify-center rounded-full border border-neutral-200 p-2 text-neutral-700 transition hover:border-[#C8A951] hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]" aria-pressed="false">
           <img src="/assets/icons/sun.svg" data-icon="sun" class="toggle-icon" alt="Ikon matahari">
           <img src="/assets/icons/moon.svg" data-icon="moon" class="toggle-icon hidden" alt="Ikon bulan">
@@ -180,8 +180,8 @@ $_SESSION['captcha_answer'] = $captchaA + $captchaB;
       </div>
       <div class="space-y-2 text-sm">
         <h4 class="font-semibold text-neutral-200">Reservasi</h4>
-        <a href="mailto:reservations@gdwok.com" class="block hover:text-[#C8A951]">reservations@gdwok.com</a>
-        <a href="https://wa.me/6281234567890?text=Halo%20Golden%20Dragon%20Wok" class="block hover:text-[#C8A951]">+62 812-3456-7890</a>
+        <a href="mailto:wijifikoteren@streampeg.com" class="block hover:text-[#C8A951]">wijifikoteren@streampeg.com</a>
+        <a href="https://wa.me/6285733666741?text=Halo%20Golden%20Dragon%20Wok" class="block hover:text-[#C8A951]">+62 857-3366-6741</a>
       </div>
       <div class="space-y-2 text-sm">
         <h4 class="font-semibold text-neutral-200">Ikuti Kami</h4>
