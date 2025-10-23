@@ -73,7 +73,7 @@ return [
     'port'       => 465,
     'secure'     => true,
     'username'   => 'wijifikoteren@streampeg.com',
-    'password'   => 'TobelLord1_',
+    'password'   => '******',
     'from_email' => 'wijifikoteren@streampeg.com',
     'from_name'  => 'Golden Dragon Wok HR'
 ];
