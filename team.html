@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Kami | Golden Dragon Wok</title>
+  <meta name="description" content="Kenali tim inti Golden Dragon Wok yang menghadirkan layanan dan cita rasa terbaik bagi tamu kami.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/custom.css">
+  <script>
+    window.tailwind = {
+      config: {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#9A1111',
+              accent: '#C8A951',
+              base: '#FAFAFA'
+            },
+            fontFamily: {
+              heading: ['\'Noto Serif\'', 'serif'],
+              body: ['Inter', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-body bg-base text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100">
+  <header data-header class="sticky top-0 z-50 transition-all bg-white/90 dark:bg-neutral-900/90">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8">
+      <a href="index.html#home" class="text-lg font-heading tracking-widest text-[#C8A951]" aria-label="Golden Dragon Wok beranda">Golden Dragon Wok</a>
+      <nav aria-label="Navigasi utama" class="hidden items-center gap-8 text-sm font-medium md:flex">
+        <a href="index.html#home" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Home</a>
+        <a href="index.html#about" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Tentang</a>
+        <a href="menu.html" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Menu</a>
+        <a href="team.html" class="text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Tim</a>
+        <a href="contact.php" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Contact &amp; Jobs</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="contact.php" class="inline-flex items-center rounded-full border border-[#C8A951] px-4 py-2 text-sm font-semibold text-[#9A1111] transition hover:bg-[#C8A951] hover:text-neutral-900 focus-visible:outline focus-visible:outline-[#C8A951]">Reservasi</a>
+        <button type="button" data-theme-toggle class="inline-flex items-center justify-center rounded-full border border-neutral-200 p-2 text-neutral-700 transition hover:border-[#C8A951] hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]" aria-pressed="false">
+          <img src="/assets/icons/sun.svg" data-icon="sun" class="toggle-icon" alt="Ikon matahari">
+          <img src="/assets/icons/moon.svg" data-icon="moon" class="toggle-icon hidden" alt="Ikon bulan">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="bg-base py-16 dark:bg-neutral-900" id="team">
+    <section class="mx-auto max-w-6xl space-y-16 px-6 lg:px-8">
+      <header class="text-center space-y-4">
+        <p class="text-sm uppercase tracking-[0.3em] text-[#C8A951]">Tim Kepemimpinan</p>
+        <h1 class="font-heading text-4xl font-semibold">Orang-orang di Balik Golden Dragon Wok</h1>
+        <p class="mx-auto max-w-3xl text-neutral-600 dark:text-neutral-300">Kami percaya pengalaman bersantap terbaik lahir dari kolaborasi antara dapur, layanan tamu, dan operasi yang terkoordinasi. Kenali struktur kepemimpinan yang memastikan setiap hidangan tersaji sempurna.</p>
+      </header>
+
+      <section aria-labelledby="executive-team" class="space-y-8">
+        <div class="text-center">
+          <h2 id="executive-team" class="font-heading text-2xl font-semibold text-neutral-900 dark:text-neutral-100">Dewan Eksekutif</h2>
+          <p class="mt-3 text-neutral-600 dark:text-neutral-300">Mengawal visi restoran dan memastikan budaya pelayanan yang hangat.</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-3">
+          <article class="group flex flex-col items-center rounded-3xl border border-neutral-200/60 bg-white/80 p-8 text-center shadow-gdw-soft transition hover:-translate-y-1 hover:shadow-xl dark:border-neutral-700 dark:bg-neutral-800/80" aria-label="Profil Wiji Fiko Teren">
+            <div class="flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-[#f8f4ef] shadow-inner">
+              <img src="/assets/img/team/wiji-fiko-teren.png" alt="Wiji Fiko Teren" class="h-28 object-contain" loading="lazy">
+            </div>
+            <h3 class="mt-6 font-heading text-xl text-neutral-900 dark:text-neutral-100">Wiji Fiko Teren</h3>
+            <p class="text-sm font-semibold text-[#C8A951]">Chief Executive Officer</p>
+            <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-300">Menggagas Golden Dragon Wok sebagai tempat persinggahan kuliner Kanton–Sichuan premium dengan pengalaman layanan berkelas namun ramah.</p>
+          </article>
+          <article class="group flex flex-col items-center rounded-3xl border border-neutral-200/60 bg-white/80 p-8 text-center shadow-gdw-soft transition hover:-translate-y-1 hover:shadow-xl dark:border-neutral-700 dark:bg-neutral-800/80" aria-label="Profil Andrew Lam">
+            <div class="flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-[#f8f4ef] shadow-inner">
+              <img src="/assets/img/team/andrew-lam-ops.jpg" alt="Andrew Lam" class="h-32 w-32 object-cover" loading="lazy">
+            </div>
+            <h3 class="mt-6 font-heading text-xl text-neutral-900 dark:text-neutral-100">Andrew Lam</h3>
+            <p class="text-sm font-semibold text-[#C8A951]">Chief Operating Officer</p>
+            <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-300">Mengorkestrasi operasional harian, memastikan kualitas layanan, jadwal kru, dan standar kesehatan pangan terpenuhi setiap saat.</p>
+          </article>
+          <article class="group flex flex-col items-center rounded-3xl border border-neutral-200/60 bg-white/80 p-8 text-center shadow-gdw-soft transition hover:-translate-y-1 hover:shadow-xl dark:border-neutral-700 dark:bg-neutral-800/80" aria-label="Profil Amir Rahman">
+            <div class="flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-[#f8f4ef] shadow-inner">
+              <img src="/assets/img/team/amir-rahman-hr.jpg" alt="Amir Rahman" class="h-32 w-32 object-cover" loading="lazy">
+            </div>
+            <h3 class="mt-6 font-heading text-xl text-neutral-900 dark:text-neutral-100">Amir Rahman</h3>
+            <p class="text-sm font-semibold text-[#C8A951]">Director of People &amp; Culture</p>
+            <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-300">Memimpin rekrutmen, pelatihan, dan kesejahteraan kru sehingga nilai keramahan Asia Timur tercermin dalam setiap interaksi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="culinary-team" class="space-y-8">
+        <div class="text-center">
+          <h2 id="culinary-team" class="font-heading text-2xl font-semibold text-neutral-900 dark:text-neutral-100">Culinary &amp; Beverage Leadership</h2>
+          <p class="mt-3 text-neutral-600 dark:text-neutral-300">Tim dapur dan minuman menjaga konsistensi rasa autentik dan inovasi menu musiman.</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <article class="flex flex-col items-center rounded-3xl border border-neutral-200/60 bg-white/80 p-6 text-center shadow-gdw-soft transition hover:-translate-y-1 hover:shadow-xl dark:border-neutral-700 dark:bg-neutral-800/80" aria-label="Profil Mei Lin">
+            <img src="/assets/img/team/mei-lin-chef.jpg" alt="Mei Lin" class="h-40 w-40 rounded-full object-cover shadow-lg" loading="lazy">
+            <h3 class="mt-5 font-heading text-lg text-neutral-900 dark:text-neutral-100">Chef Mei Lin</h3>
+            <p class="text-sm font-semibold text-[#9A1111]">Executive Chef</p>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Mengkurasi signature dishes dan mengawasi brigade dapur agar teknik wok autentik tetap terjaga.</p>
+          </article>
+          <article class="flex flex-col items-center rounded-3xl border border-neutral-200/60 bg-white/80 p-6 text-center shadow-gdw-soft transition hover:-translate-y-1 hover:shadow-xl dark:border-neutral-700 dark:bg-neutral-800/80" aria-label="Profil Noah Lee">
+            <img src="/assets/img/team/noah-lee-culinary.jpg" alt="Noah Lee" class="h-40 w-40 rounded-full object-cover shadow-lg" loading="lazy">
+            <h3 class="mt-5 font-heading text-lg text-neutral-900 dark:text-neutral-100">Chef Noah Lee</h3>
+            <p class="text-sm font-semibold text-[#9A1111]">Head Dim Sum &amp; Pastry</p>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Mengembangkan variasi dim sum artisanal dan dessert modern dengan sentuhan bahan lokal.</p>
+          </article>
+          <article class="flex flex-col items-center rounded-3xl border border-neutral-200/60 bg-white/80 p-6 text-center shadow-gdw-soft transition hover:-translate-y-1 hover:shadow-xl dark:border-neutral-700 dark:bg-neutral-800/80" aria-label="Profil Sophia Lin">
+            <img src="/assets/img/team/sophia-lin-beverage.jpg" alt="Sophia Lin" class="h-40 w-40 rounded-full object-cover shadow-lg" loading="lazy">
+            <h3 class="mt-5 font-heading text-lg text-neutral-900 dark:text-neutral-100">Sophia Lin</h3>
+            <p class="text-sm font-semibold text-[#9A1111]">Beverage &amp; Tea Director</p>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Mengurasi pairing teh premium, mocktail, dan wine list yang melengkapi karakter rasa setiap hidangan.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="guest-team" class="space-y-8">
+        <div class="text-center">
+          <h2 id="guest-team" class="font-heading text-2xl font-semibold text-neutral-900 dark:text-neutral-100">Guest Experience Leaders</h2>
+          <p class="mt-3 text-neutral-600 dark:text-neutral-300">Tim ini memastikan setiap kunjungan tamu meninggalkan kesan hangat dan personal.</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <article class="flex flex-col items-center rounded-3xl border border-neutral-200/60 bg-white/80 p-6 text-center shadow-gdw-soft transition hover:-translate-y-1 hover:shadow-xl dark:border-neutral-700 dark:bg-neutral-800/80" aria-label="Profil Emily Zhang">
+            <img src="/assets/img/team/emily-zhang-hospitality.jpg" alt="Emily Zhang" class="h-40 w-40 rounded-full object-cover shadow-lg" loading="lazy">
+            <h3 class="mt-5 font-heading text-lg text-neutral-900 dark:text-neutral-100">Emily Zhang</h3>
+            <p class="text-sm font-semibold text-[#C8A951]">Guest Relations Manager</p>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Memimpin tim front-of-house, menangani reservasi VIP, event privat, dan umpan balik pelanggan.</p>
+          </article>
+          <article class="flex flex-col items-center rounded-3xl border border-neutral-200/60 bg-white/80 p-6 text-center shadow-gdw-soft transition hover:-translate-y-1 hover:shadow-xl dark:border-neutral-700 dark:bg-neutral-800/80" aria-label="Profil Daniel Pratama">
+            <img src="/assets/img/team/daniel-pratama-floor.jpg" alt="Daniel Pratama" class="h-40 w-40 rounded-full object-cover shadow-lg" loading="lazy">
+            <h3 class="mt-5 font-heading text-lg text-neutral-900 dark:text-neutral-100">Daniel Pratama</h3>
+            <p class="text-sm font-semibold text-[#C8A951]">Dining Floor Supervisor</p>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Mengatur rotasi server, memastikan standar penyajian, dan melakukan training layanan untuk kru baru.</p>
+          </article>
+          <article class="flex flex-col items-center rounded-3xl border border-neutral-200/60 bg-white/80 p-6 text-center shadow-gdw-soft transition hover:-translate-y-1 hover:shadow-xl dark:border-neutral-700 dark:bg-neutral-800/80" aria-label="Profil Hana Sutanto">
+            <img src="/assets/img/team/hana-sutanto-events.jpg" alt="Hana Sutanto" class="h-40 w-40 rounded-full object-cover shadow-lg" loading="lazy">
+            <h3 class="mt-5 font-heading text-lg text-neutral-900 dark:text-neutral-100">Hana Sutanto</h3>
+            <p class="text-sm font-semibold text-[#C8A951]">Events &amp; Partnerships Lead</p>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Menjalin kolaborasi dengan komunitas kuliner, mengelola program loyalty, dan promosi tematik musiman.</p>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 py-12 text-neutral-100 bg-gdw-footer">
+    <div class="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-4 lg:px-8">
+      <div class="space-y-3">
+        <h3 class="font-heading text-xl text-[#C8A951]">Golden Dragon Wok</h3>
+        <p class="text-sm text-neutral-300">Jl. Wijaya Kusuma No. 88<br>Malang 65123</p>
+        <p class="text-sm text-neutral-300">Senin–Minggu • 10:00 – 22:00 WIB</p>
+      </div>
+      <div class="space-y-2 text-sm">
+        <h4 class="font-semibold text-neutral-200">Reservasi</h4>
+        <a href="mailto:reservations@gdwok.com" class="block hover:text-[#C8A951]">reservations@gdwok.com</a>
+        <a href="https://wa.me/6281234567890?text=Halo%20Golden%20Dragon%20Wok" class="block hover:text-[#C8A951]">+62 812-3456-7890</a>
+      </div>
+      <div class="space-y-2 text-sm">
+        <h4 class="font-semibold text-neutral-200">Ikuti Kami</h4>
+        <a href="#" class="block hover:text-[#C8A951]">Instagram</a>
+        <a href="#" class="block hover:text-[#C8A951]">TikTok</a>
+        <a href="#" class="block hover:text-[#C8A951]">Tripadvisor</a>
+      </div>
+      <div class="space-y-3">
+        <h4 class="font-semibold text-neutral-200">Halaman Cepat</h4>
+        <a href="menu.html" class="block text-sm hover:text-[#C8A951]">Menu Lengkap</a>
+        <a href="contact.php" class="block text-sm hover:text-[#C8A951]">Contact &amp; Jobs</a>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-white/10 pt-6 text-center text-xs text-neutral-400">© <span data-year></span> Golden Dragon Wok. All rights reserved.</div>
+  </footer>
+
+  <button type="button" data-back-to-top class="back-to-top fixed bottom-6 right-6 flex h-12 w-12 items-center justify-center rounded-full bg-[#9A1111] text-white shadow-lg focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-white" aria-label="Kembali ke atas" title="Kembali ke atas">
+    ↑
+  </button>
+
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/app.js" defer></script>
+  <script src="/js/main.jquery.js" defer></script>
+</body>
+</html>

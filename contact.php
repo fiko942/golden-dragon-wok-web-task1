@@ -50,6 +50,7 @@ $_SESSION['captcha_answer'] = $captchaA + $captchaB;
         <a href="index.html#home" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Home</a>
         <a href="index.html#about" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Tentang</a>
         <a href="menu.html" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Menu</a>
+        <a href="team.html" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Tim</a>
         <a href="contact.php" class="text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Contact &amp; Jobs</a>
       </nav>
       <div class="flex items-center gap-4">
