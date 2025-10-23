@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Golden Dragon Wok</title>
+  <meta name="description" content="Jelajahi menu Golden Dragon Wok: dim sum, main course Kanton, hidangan pedas Sichuan, minuman, dan dessert khas.">
+  <meta name="keywords" content="menu restoran cina, golden dragon wok menu, dim sum malang">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/custom.css">
+  <script>
+    window.tailwind = {
+      config: {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#9A1111',
+              accent: '#C8A951',
+              base: '#FAFAFA'
+            },
+            fontFamily: {
+              heading: ['\'Noto Serif\'', 'serif'],
+              body: ['Inter', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-body bg-base text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100">
+  <header data-header class="sticky top-0 z-50 transition-all bg-white/90 dark:bg-neutral-900/90">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8">
+      <a href="index.html#home" class="text-lg font-heading tracking-widest text-[#C8A951]" aria-label="Golden Dragon Wok beranda">Golden Dragon Wok</a>
+      <nav aria-label="Navigasi utama" class="hidden items-center gap-8 text-sm font-medium md:flex">
+        <a href="index.html#home" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Home</a>
+        <a href="index.html#about" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Tentang</a>
+        <a href="menu.html" class="text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Menu</a>
+        <a href="contact.php" class="hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]">Contact &amp; Jobs</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="contact.php" class="inline-flex items-center rounded-full border border-[#C8A951] px-4 py-2 text-sm font-semibold text-[#9A1111] transition hover:bg-[#C8A951] hover:text-neutral-900 focus-visible:outline focus-visible:outline-[#C8A951]">Apply Jobs</a>
+        <button type="button" data-theme-toggle class="inline-flex items-center justify-center rounded-full border border-neutral-200 p-2 text-neutral-700 transition hover:border-[#C8A951] hover:text-[#C8A951] focus-visible:outline focus-visible:outline-[#C8A951]" aria-pressed="false">
+          <img src="/assets/icons/sun.svg" data-icon="sun" class="toggle-icon" alt="Ikon matahari">
+          <img src="/assets/icons/moon.svg" data-icon="moon" class="toggle-icon hidden" alt="Ikon bulan">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="bg-base py-16 dark:bg-neutral-900" id="menu">
+    <section class="mx-auto max-w-6xl px-6 lg:px-8">
+      <header class="mb-12 space-y-4 text-center">
+        <p class="text-sm uppercase tracking-[0.3em] text-[#C8A951]">Menu</p>
+        <h1 class="font-heading text-4xl font-semibold">Jelajahi Koleksi Hidangan Kami</h1>
+        <p class="text-neutral-600 dark:text-neutral-300">Gunakan filter untuk menemukan hidangan favorit Anda. Semua dimasak fresh-to-order oleh chef profesional kami.</p>
+      </header>
+
+      <div class="grid gap-8 lg:grid-cols-[280px_1fr]">
+        <aside class="space-y-6">
+          <div class="rounded-2xl border border-neutral-200/70 bg-white/70 p-6 shadow-gdw-soft dark:border-neutral-700 dark:bg-neutral-800/80">
+            <h2 class="mb-4 text-lg font-semibold text-neutral-900 dark:text-neutral-100">Kategori</h2>
+            <div data-filter-category class="flex flex-wrap gap-2">
+              <button type="button" data-category="All" class="rounded-full bg-[#9A1111] px-4 py-2 text-sm font-semibold text-neutral-100 transition focus-visible:outline focus-visible:outline-[#C8A951]">Semua</button>
+              <button type="button" data-category="Appetizer" class="rounded-full bg-neutral-200 px-4 py-2 text-sm font-semibold text-neutral-800 transition dark:bg-neutral-800 dark:text-neutral-200">Appetizer</button>
+              <button type="button" data-category="Main Course" class="rounded-full bg-neutral-200 px-4 py-2 text-sm font-semibold text-neutral-800 transition dark:bg-neutral-800 dark:text-neutral-200">Main Course</button>
+              <button type="button" data-category="Noodles" class="rounded-full bg-neutral-200 px-4 py-2 text-sm font-semibold text-neutral-800 transition dark:bg-neutral-800 dark:text-neutral-200">Noodles</button>
+              <button type="button" data-category="Rice" class="rounded-full bg-neutral-200 px-4 py-2 text-sm font-semibold text-neutral-800 transition dark:bg-neutral-800 dark:text-neutral-200">Rice</button>
+              <button type="button" data-category="Dessert" class="rounded-full bg-neutral-200 px-4 py-2 text-sm font-semibold text-neutral-800 transition dark:bg-neutral-800 dark:text-neutral-200">Dessert</button>
+              <button type="button" data-category="Beverage" class="rounded-full bg-neutral-200 px-4 py-2 text-sm font-semibold text-neutral-800 transition dark:bg-neutral-800 dark:text-neutral-200">Beverage</button>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-neutral-200/70 bg-white/70 p-6 shadow-gdw-soft dark:border-neutral-700 dark:bg-neutral-800/80">
+            <h2 class="mb-4 text-lg font-semibold text-neutral-900 dark:text-neutral-100">Preferensi</h2>
+            <form data-filter-tag class="space-y-3" aria-label="Filter diet">
+              <label class="flex items-center gap-3 text-sm">
+                <input type="checkbox" data-tag="spicy" class="h-4 w-4 rounded border-neutral-300 text-[#9A1111] focus:ring-[#C8A951]">
+                <span>Pedas</span>
+              </label>
+              <label class="flex items-center gap-3 text-sm">
+                <input type="checkbox" data-tag="vegetarian" class="h-4 w-4 rounded border-neutral-300 text-[#9A1111] focus:ring-[#C8A951]">
+                <span>Vegetarian</span>
+              </label>
+              <label class="flex items-center gap-3 text-sm">
+                <input type="checkbox" data-tag="halalFriendly" class="h-4 w-4 rounded border-neutral-300 text-[#9A1111] focus:ring-[#C8A951]">
+                <span>Halal-Friendly</span>
+              </label>
+            </form>
+          </div>
+        </aside>
+
+        <section aria-live="polite" class="space-y-6">
+          <div class="flex flex-col gap-4 rounded-2xl border border-neutral-200/70 bg-white/70 p-6 shadow-gdw-soft dark:border-neutral-700 dark:bg-neutral-800/80 sm:flex-row sm:items-center sm:justify-between">
+            <div class="flex flex-1 items-center gap-3">
+              <label for="menu-search" class="sr-only">Cari menu</label>
+              <input id="menu-search" type="search" placeholder="Cari hidangan, contoh: tofu, bebek" class="w-full rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-800 placeholder-neutral-400 focus:border-[#C8A951] focus:outline-none focus:ring-2 focus:ring-[#C8A951]/40 dark:bg-neutral-900 dark:text-neutral-100" aria-label="Cari menu">
+            </div>
+            <div class="flex items-center gap-2">
+              <label for="menu-sort" class="text-sm text-neutral-600 dark:text-neutral-300">Urutkan</label>
+              <select id="menu-sort" class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-800 focus:border-[#C8A951] focus:ring-2 focus:ring-[#C8A951]/40 dark:bg-neutral-900 dark:text-neutral-100">
+                <option value="popular">Popular</option>
+                <option value="price-asc">Harga: Rendah ke Tinggi</option>
+                <option value="price-desc">Harga: Tinggi ke Rendah</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="menu-grid" class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 py-12 text-neutral-100 bg-gdw-footer">
+    <div class="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-4 lg:px-8">
+      <div class="space-y-3">
+        <h3 class="font-heading text-xl text-[#C8A951]">Golden Dragon Wok</h3>
+        <p class="text-sm text-neutral-300">Jl. Wijaya Kusuma No. 88<br>Malang 65123</p>
+        <p class="text-sm text-neutral-300">Senin–Minggu • 10:00 – 22:00 WIB</p>
+      </div>
+      <div class="space-y-2 text-sm">
+        <h4 class="font-semibold text-neutral-200">Reservasi</h4>
+        <a href="mailto:reservations@gdwok.com" class="block hover:text-[#C8A951]">reservations@gdwok.com</a>
+        <a href="https://wa.me/6281234567890?text=Halo%20Golden%20Dragon%20Wok" class="block hover:text-[#C8A951]">+62 812-3456-7890</a>
+      </div>
+      <div class="space-y-2 text-sm">
+        <h4 class="font-semibold text-neutral-200">Ikuti Kami</h4>
+        <a href="#" class="block hover:text-[#C8A951]">Instagram</a>
+        <a href="#" class="block hover:text-[#C8A951]">TikTok</a>
+        <a href="#" class="block hover:text-[#C8A951]">Tripadvisor</a>
+      </div>
+      <div class="space-y-3">
+        <h4 class="font-semibold text-neutral-200">Informasi</h4>
+        <a href="index.html#signature" class="block text-sm hover:text-[#C8A951]">Signature Dishes</a>
+        <a href="contact.php" class="block text-sm hover:text-[#C8A951]">Contact &amp; Jobs</a>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-white/10 pt-6 text-center text-xs text-neutral-400">© <span data-year></span> Golden Dragon Wok. All rights reserved.</div>
+  </footer>
+
+  <div id="menu-modal-overlay" class="hidden fixed inset-0 z-40 bg-black/50" aria-hidden="true"></div>
+  <section id="menu-modal" class="invisible fixed inset-0 z-50 flex items-center justify-center px-4 py-10 opacity-0 transition" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="relative max-w-3xl w-full rounded-3xl bg-white p-6 shadow-gdw-soft dark:bg-neutral-900">
+      <button type="button" data-modal-close class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 text-neutral-700 hover:text-[#9A1111] focus-visible:outline focus-visible:outline-[#C8A951]"><img src="/assets/icons/close.svg" alt="Tutup detail"></button>
+      <div class="grid gap-6 md:grid-cols-[1fr_1.2fr]">
+        <img data-modal-image src="" alt="" class="h-64 w-full rounded-2xl object-cover" loading="lazy">
+        <div class="space-y-4">
+          <h2 data-modal-title class="font-heading text-2xl font-semibold text-neutral-900 dark:text-neutral-100">Nama Menu</h2>
+          <p data-modal-desc class="text-sm text-neutral-600 dark:text-neutral-300">Deskripsi menu akan tampil di sini.</p>
+          <p class="text-lg font-semibold text-[#9A1111]">Harga: <span data-modal-price>Rp 0</span></p>
+          <div data-modal-tags class="flex flex-wrap gap-2"></div>
+          <div>
+            <h3 class="text-sm font-semibold text-neutral-800 dark:text-neutral-200">Alergen</h3>
+            <p data-modal-allergens class="text-sm text-neutral-600 dark:text-neutral-300">-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button type="button" data-back-to-top class="back-to-top fixed bottom-6 right-6 flex h-12 w-12 items-center justify-center rounded-full bg-[#9A1111] text-white shadow-lg focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-white" aria-label="Kembali ke atas" title="Kembali ke atas">
+    ↑
+  </button>
+
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/app.js" defer></script>
+  <script src="/js/main.jquery.js" defer></script>
+</body>
+</html>

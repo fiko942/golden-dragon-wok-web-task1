@@ -1,0 +1,25 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Environment & credentials
+.env
+*.env
+php/config-smtp.php.local
+
+# Logs & runtime data
+php/logs/
+*.log
+*.tmp
+
+# Cache & build artifacts
+/.cache/
+/.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Uploads & temp files
+assets/img/raw/
+*.swp
+*.swo

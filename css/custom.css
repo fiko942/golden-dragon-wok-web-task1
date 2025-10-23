@@ -1,0 +1,176 @@
+/* Custom styles for Golden Dragon Wok */
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #FAFAFA;
+  color: #1f1f1f;
+}
+
+html.dark body {
+  background-color: #171717;
+  color: #f5f5f5;
+}
+
+/* Accessible focus ring */
+:where(a, button, input, select, textarea) {
+  outline: none;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid rgba(200, 169, 81, 0.7);
+  outline-offset: 3px;
+}
+
+/* Background pattern utilities */
+.bg-gdw-hero {
+  background-image:
+    radial-gradient(circle at top left, rgba(200, 169, 81, 0.25), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(154, 17, 17, 0.35), transparent 60%),
+    url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 40 40" fill="none"%3E%3Cpath d="M20 0c1.6 5.5 7 9.4 13.5 9.4-1.4 7.2-6.2 12-13.5 13.5C12.7 21.4 7.9 16.6 6.5 9.4 13 9.4 18.4 5.5 20 0Z" fill="%23ffffff" fill-opacity="0.08"/%3E%3C/svg%3E');
+  background-size: cover, cover, 160px;
+}
+
+.bg-gdw-footer {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100"%3E%3Cpath fill="%239A1111" fill-opacity="0.08" d="M50 0c6 15 24 27 50 27-4 21-19 35-50 40C19 62 4 48-2 27 24 27 42 15 50 0Z"/%3E%3C/svg%3E');
+  background-size: 200px;
+}
+
+.shadow-gdw-soft {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.card-hover {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.16);
+  border-color: #C8A951;
+}
+
+.header-scrolled {
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Keyframes */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+.animate-fade-in {
+  animation: fade-in 800ms ease forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 700ms ease forwards;
+}
+
+.btn-shimmer {
+  background-image: linear-gradient(120deg, rgba(200, 169, 81, 0.5), rgba(200, 169, 81, 0.2), rgba(200, 169, 81, 0.6));
+  background-size: 200px 100%;
+  animation: shimmer 2.5s infinite;
+}
+
+.toggle-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.testimonial-slide.is-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+
+.back-to-top {
+  transition: opacity 250ms ease; opacity: 0; pointer-events: none;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Utility tweaks */
+.text-shadow-soft {
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.badge-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+#menu-modal {
+  transition: opacity 250ms ease, visibility 250ms ease;
+}
+
+#menu-modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+#menu-modal:not(.open) {
+  pointer-events: none;
+}
+
+[data-header].scrolled > div {
+  padding-block: 0.75rem !important;
+}

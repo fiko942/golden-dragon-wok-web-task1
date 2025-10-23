@@ -1,0 +1,7 @@
+{
+  "name": "goldendragonwok/site",
+  "description": "Company profile Golden Dragon Wok dengan form karier menggunakan PHPMailer",
+  "require": {
+    "phpmailer/phpmailer": "^6.9"
+  }
+}
