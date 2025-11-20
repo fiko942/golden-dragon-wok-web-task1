@@ -125,24 +125,63 @@ namespace {
 
     date_default_timezone_set('Asia/Jakarta');
 
-    function printWithTime(string $text): void
+    function rupiah(float $value): string
     {
-        echo '[' . date('H:i:s') . '] ' . $text . PHP_EOL;
+        return 'Rp ' . number_format($value, 0, ',', '.');
     }
 
-    // Demontrasi penggunaan object operator pada properti dan metode public.
+    function formatMenuItemLine(\Gdw\Menu\MenuItem $item): string
+    {
+        $tags = $item->tags ? '[' . implode(', ', $item->tags) . ']' : '[]';
+        return sprintf(
+            'Produk: %s | Disajikan: %s | Harga: %s | Tag: %s',
+            $item->name,
+            $item->servedIn,
+            rupiah((float) $item->price),
+            $tags
+        );
+    }
+
+    // 1. Membuat MenuItem (Beverage)
     $latte = new Beverage('Latte Gumai', 35000);
     $latte->servedIn = 'cangkir batu';
-    $latte->serveWithIce();
-    printWithTime($latte->describe());
-    printWithTime($latte->brew('kopi Sumatra'));
-    printWithTime($latte->tastingNote());
+    $latte->serveWithIce(); // object operator pada method public
 
+    // 2. Menggunakan Method pada Beverage
+    $brewInfo = $latte->brew('kopi Sumatra');
+    $tastingNote = $latte->tastingNote();
+
+    // 3. Inheritance (MainCourse extends MenuItem)
     $noodle = new MainCourse('Mie Dragon Wok', 48000);
     $noodle->addSide('pangsit goreng');
     $noodle->addSide('acar nenas');
     $noodle->upgradePortion('mangkuk porsi sharing');
     $noodle->applyDiscount(10);
-    printWithTime($noodle->describe());
-    printWithTime($noodle->serve());
+
+    // Menu tambahan untuk daftar
+    $tea = new Beverage('Teh Rosella', 18000, false);
+
+    $daftarMenu = [$latte, $noodle, $tea];
+
+    echo "=== DEMO OOP MENU RESTO ===" . PHP_EOL . PHP_EOL;
+
+    echo "1. Membuat MenuItem (Beverage):" . PHP_EOL;
+    echo "   " . formatMenuItemLine($latte) . PHP_EOL . PHP_EOL;
+
+    echo "2. Menggunakan Method:" . PHP_EOL;
+    echo "   Nama: {$latte->name}" . PHP_EOL;
+    echo "   Brewing: {$brewInfo}" . PHP_EOL;
+    echo "   Catatan Rasa: {$tastingNote}" . PHP_EOL . PHP_EOL;
+
+    echo "3. Inheritance (MainCourse extends MenuItem):" . PHP_EOL;
+    echo "   " . formatMenuItemLine($noodle) . PHP_EOL;
+    echo "   " . $noodle->serve() . PHP_EOL . PHP_EOL;
+
+    echo "4. Daftar Menu:" . PHP_EOL;
+    echo "=== DAFTAR MENU ===" . PHP_EOL . PHP_EOL;
+    foreach ($daftarMenu as $idx => $item) {
+        $nomor = $idx + 1;
+        echo "{$nomor}. " . formatMenuItemLine($item) . PHP_EOL;
+    }
+    echo PHP_EOL . "Total produk: " . count($daftarMenu) . PHP_EOL;
 }
