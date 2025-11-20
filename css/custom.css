@@ -174,3 +174,10 @@ html.dark body {
 [data-header].scrolled > div {
   padding-block: 0.75rem !important;
 }
+
+/* Avatar image helper: show the full face inside circular masks */
+.avatar-img {
+  -o-object-fit: contain;
+  object-fit: contain !important;
+  object-position: center top !important;
+}
